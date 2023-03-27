@@ -10,25 +10,34 @@
 
     <div class="page">
 
-        <aside>Coluna 25%</aside>
-        <main>Coluna 75%</main>
+        <aside>Coluna com flex 1</aside>
+        <main>Coluna com flex 3</main>
 
     </div>
 
     <style>
+        *, *::before, *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .page{
             min-height: 100vh;
             display: flex;
-            gap: 1rem;
+        }
+
+        aside,
+        main{
+            padding: 1em;
         }
 
         aside{
-            background-color: rgb(207, 255, 94);
-            flex-basis: 25%;
+            background-color: #cfff5e;
+            flex: 1;
         }
 
         main{
-            background-color: rgb(80, 80, 80);
+            background-color: #505050;
             flex: 1;
         }
     </style>

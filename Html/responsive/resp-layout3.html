@@ -9,8 +9,7 @@
 <body>
 
     <div class="parent">
-        
-        <div class="flex">
+        <div class="auto-grid">
             <div class="box">Lorem</div>
             <div class="box">Quis</div>
             <div class="box">Vitae</div>
@@ -22,30 +21,39 @@
             <div class="box">Consequuntur</div>
             <div class="box">Quam</div>
         </div>
-
     </div>
 
     <style>
-        .parent{
-            outline: 2px dashed rgb(27, 27, 27);
-            padding: .5rem;
+        *{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            box-sizing: border-box;
+            padding: 0;
         }
-        .flex{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .box{
-            background-color: dodgerblue;
-            padding: .5rem;
-            outline: 2px solid #303030;
-            color: white;
-            max-width: 100%;
+        
+        :root{
+            --back-color: #303030;
         }
 
-        .flex > *{
-            flex: 1;
+        .parent{
+            outline: 5px solid #555;
+            padding: .5em;
+            margin: 1em 2em;
+        }
+
+        .auto-grid{
+            display: grid;
+            gap: .5em;
+            
+            grid-template-columns: 
+              repeat(auto-fit, minmax(min(10em, 100%), 1fr));
+        }        
+        
+        .box{
+            background-color: dodgerblue;
+            color: white;
+            padding: .5rem;
         }
     </style>
+    
 </body>
 </html>

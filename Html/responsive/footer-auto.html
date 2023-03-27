@@ -7,27 +7,36 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <h1>I'm a header!</h1>
+    </header>
 
     <style>
 
         
         *{
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         body{
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
         }
+
+        header{
+            padding: 1em 0;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
         footer{
             margin-top: auto;
             background-color: rgb(41, 41, 41);
-            height: 6rem;
             color: white;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex: 1;
+            text-align: center;
+            padding: 1em 0;
         }
     </style>
     
