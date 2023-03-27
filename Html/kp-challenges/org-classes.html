@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>BEM - Block, Element and Modifier</h1>
+
+    <div class="container">
+        <div class="card card--light">
+            <img class="card__image" src="https://unsplash.it/200" alt="">
+            <h2 class="card__title">I'm a light card</h2>
+            <p class="card__body">And here would be the content of my card</p>
+        </div>
+        <div class="card card--dark">
+            <img class="card__image" src="https://unsplash.it/200" alt="">
+            <h2 class="card__title">I'm a light card</h2>
+            <p class="card__body">And here would be the content of my card</p>
+        </div>
+    </div>
+
+    <style>
+        *, *::before, *::after{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2em;
+            margin: 30px 10px;
+
+            font-family: sans-serif;
+        }
+
+        .card{
+            max-width: 300px;
+            box-shadow: 0 10px 30px -10px rgba(0,0,0, .45);
+            border-radius: 5px;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card--light{
+            background-color: #eee;
+        }
+
+        .card--dark{
+            background-color: #333;
+            color: #fff;
+        }
+
+        .card__image{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card__title{
+            padding: 10px 15px;
+        }
+
+        .card__body{
+            opacity: .5;
+            padding: 5px 15px 15px;
+        }
+    </style>
+    
+</body>
+</html>

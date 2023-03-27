@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, #67a5d4, #2073b3);
+}
+
+.card{
+    position: relative;
+    background: #fff;
+    padding: 15px;
+
+    width: 350px;
+    height: 120px;
+
+    overflow: hidden;
+
+    transition: height 300ms ease-out;
+
+}
+
+/* Javascript injection */
+.card.active{
+    height: 400px;
+}
+
+.card .content{
+    display: flex;
+    align-items: center;
+}
+
+.card .content .imgbx{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 1em;
+}
+
+.card .content .imgbx img{
+    border-radius: 50%;
+    max-width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.card .content h2{
+    font-size: 1.3rem;
+}
+
+.card .content h2 span{
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #999;
+}
+
+.navigation{
+    position: relative;
+    top: 25px;
+    padding: 20px 0;    
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.navigation li{
+    list-style: none;
+    margin: 15px 0;
+}
+
+.navigation li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1em;
+    transition: color 0.25s;
+}
+
+.navigation li a:hover{
+    color: #36b3ff;
+}
+
+.navigation li a ion-icon{
+    font-size: 1.6em;
+    margin-right: 10px;
+}
+
+/* TOGGLE */
+.toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: #36b3ff;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    cursor: pointer;
+    z-index: 100;
+}
+
+.toggle ion-icon{
+    font-size: 1.4em;
+    color: #fff;
+
+    transition: transform ease-in-out .2s;
+}
+
+.card.active .toggle ion-icon{
+    transform: rotate(-180deg);
+}

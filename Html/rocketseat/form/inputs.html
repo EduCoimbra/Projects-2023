@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="inputs.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <div class="faixas" id="btn-totop">
+        <div class="faixa">
+            <h1>Inputs</h1>
+        </div>
+    </div>
+
+    <section>
+        <main>
+            <div class="flex flex-main">
+                <div class="box">text</div>
+                <div class="box">email</div>
+                <div class="box">number</div>
+                <div class="box">tel</div>
+                <div class="box">button</div>
+                <div class="box">checkbox</div>
+                <div class="box">color</div>
+                <div class="box">date</div>
+                <div class="box">datetime-local</div>
+                <div class="box">file</div>
+                <div class="box">hidden</div>
+                <div class="box">image</div>
+                <div class="box">month</div>
+                <div class="box">password</div>
+                <div class="box">radio</div>
+                <div class="box">range</div>
+                <div class="box">reset</div>
+                <div class="box">search</div>
+                <div class="box">submit</div>
+                <div class="box">time</div>
+                <div class="box">url</div>
+                <div class="box">week</div>
+                <div class="box">textarea</div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="flex f-aside">
+
+                <a href="#bd-text">
+                    <div class="box">
+                        <label for="text">Text</label>
+                        <input style="max-width:100%!important;" type="text" id="text" pattern="[a-f]{5,8}" title="Mínimo de caracteres: 5">
+                    </div>
+                </a>
+
+                <div class="box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required multiple minlength="8" maxlength="255" pattern=".+@rocketseat\.com\.br" title="escolha@rocketseat.com.br">
+                </div>
+
+                <div class="box">
+                    <label for="number">Number</label>
+                    <input type="number" id="number" readonly>
+                </div>
+
+                <div class="box">
+                    <label for="tel">Phone</label>
+                    <input type="tel" id="tel">
+                </div>
+
+                <div class="box">
+                    Button
+                    <input type="button" value="button">
+                </div>
+                
+                <div class="box">
+                    Checkbox
+                    <label for="check"></label>
+                    <input type="checkbox" id="check" checked>
+                </div>
+
+                <div class="box">
+                    <label for="color">Color</label>
+                    <input type="color" id="color" value="#00ff00" list="color-list">
+                    <datalist id="color-list">
+                        <option>#d1d1d1</option>
+                        <option>#303030</option>
+                        <option>#0000ff</option>
+                    </datalist>
+                </div> 
+
+                <div class="box">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="box">
+                    <label for="dt-local">Datetime local</label>
+                    <input type="datetime-local">
+                </div>
+
+                <div class="box">
+                    <label for="file">File</label>
+                    <input type="file" id="file" accept="image/*, video/*" class="file-input">
+
+                    <!-- To upload multiple files
+
+                        <form action="" enctype="multipart/form-data">
+                        <input type="file" multiple accept=".pdf">
+                        </form> 
+                    -->
+                </div>
+
+                <div class="box">
+                    Hidden
+                    <input type="hidden">
+                </div>
+                
+                <div class="box">
+                    Image
+                    <input type="image" src="" width="17px" height="auto">
+                </div>
+
+                <div class="box">
+                    <label for="month">Month</label>
+                    <input type="month" id="month">
+                </div>
+
+                <div class="box">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" minlength="5" maxlength="8" size="">
+                </div>
+
+                <div class="box">
+                    Radio
+                    <input type="radio" id="radio">
+                    <label for="radio">radio</label>
+                </div>
+
+                <div class="box">
+                    <label for="range">Range</label>
+                    <input type="range" id="range">
+                </div>
+
+                <div class="box">
+                    Reset
+                    <input type="reset" value="reset">
+                </div>
+
+                <div class="box">
+                    <!-- aria-label: substitue o label e serve para leitores de tela -->
+
+                    <input type="seach" name="q" ut="" placeholder="Digite algo" aria-label="Campo de pesquisa: Digite seu termo de busca">
+                </div>
+
+                <div class="box">
+                    Submit
+                    <input type="submit" value="submit">
+                </div>
+
+                <div class="box">
+                    <label for="time">Time</label>
+                    <input type="time" id="time">
+                </div>
+
+                <div class="box">
+                    <label for="url">URL</label>
+                    <input type="url" id="url" placeholder="https://site.com.br" required title="Só aceita domínios .com.br" pattern=".*\.com\.br/.*" list="urls-list">
+
+                    <datalist id="urls-list">
+                        <option>https://meusite.com.br/</option>
+                    </datalist>
+                </div>
+
+                <div class="box">
+                    <label for="week">Week</label>
+                    <input type="week" id="week">
+                </div>
+
+                <div class="box">
+                    <label for="msn">Textarea</label>
+                    <textarea id="msn" name="message" cols="20" rows="3" minlength="4" maxlength="300" wrap="" placeholder="Digite sua mensagem..." form="" required></textarea>
+                </div>
+
+                <div class="box">
+                    <label for="car-select">Escolha</label><br>
+                    <select name="car-model" id="car-select" required form="" title="Segure CTRL e clique para escolher mais de uma marca" multiple size="3" >
+                        <!-- multiple: para escolher mais de um -->
+
+                        <option value="">Fiat</option>
+                        <option value="">Ford</option>
+                        <option value="">Volkswagen</option>
+                    </select>
+                </div>
+
+                <div class="box">
+                    <label for="animals">Please, choose your pets
+                        <select name="pets" id="animals" multiple size="3">
+                            <optgroup label="Four legged">
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="hamster">Hamster</option>
+                            </optgroup>
+
+                            <optgroup label="Flying pets">
+                                <option value="parrot">Parrot</option>
+                                <option value="macaw">Macaw</option>
+                                <option value="albatross">Albatross</option>
+                            </optgroup>
+
+                        </select>
+                    </label>
+                </div>                
+            </div>
+        </aside>
+
+    </section>
+
+
+    <!-- INPUT ATTRIBUTES -->
+
+    <div class="faixas">
+        <div class="faixa">
+            <h2>Input attributes</h2>
+        </div>
+    </div>
+
+    
+    <section>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank" class="btn">source</a>
+        <div class="flex flex-main">
+
+            <ul class="flex">
+                <li class="box">accept</li>
+                <li class="box">alt</li>
+                <li class="box">autocomplete</li>
+                <li class="box">capture</li>
+                <li class="box">checked</li>
+                <li class="box">dirname</li>
+                <li class="box">disabled</li>
+                <li class="box">form</li>
+                <li class="box">formaction</li>
+                <li class="box">formenctype</li>
+                <li class="box">formmethod</li>
+                <li class="box">formnovalidade</li>
+                <li class="box">formtarget</li>
+                <li class="box">heigh</li>
+                <li class="box">list</li>
+                <li class="box">max</li>
+                <li class="box">maxlength</li>
+                <li class="box">min</li>
+                <li class="box">minlength</li>
+                <li class="box">multiple</li>
+                <li class="box">name</li>
+                <li class="box">pattern</li>
+                <li class="box">placeholder</li>
+                <li class="box">readonly</li>            
+                <li class="box">required</li>
+                <li class="box">size</li>
+                <li class="box">src</li>
+                <li class="box">step</li>
+                <li class="box">type</li>
+                <li class="box">value</li>
+                <li class="box">width</li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">
+                    <li class="box btn">global attribute</li>
+                </a>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Breaking down the input types -->
+
+    <div class="faixas">
+        <div class="faixa">
+            <h2>Breaking down the Input Types</h2>
+        </div>
+    </div>
+
+    <section class="bd">
+
+        <h3>Text</h3>
+        <div class="bd-text box" id="bd-text">
+            <label for="text">Text</label>
+            <input type="text" id="text" pattern="[a-f]{5,8}" title="Mínimo de caracteres: 5">
+        </div>
+        <hr>
+
+        <h3>Email</h3>
+        <div class="bd-email box">
+            <label for="email">Email</label>
+            <input type="email" id="email" required multiple minlength="8" maxlength="255" pattern=".+@rocketseat\.com\.br" title="escolha@rocketseat.com.br">
+        </div>
+        <hr>
+
+        <h3>Number</h3>
+        <div class="bd-number box">
+            <label for="number">Number</label>
+            <input type="number" id="number" min="2" max="10" step="2">
+        </div>
+        <hr>
+
+        <h3>Phone</h3>
+        <div class="bd-phone box">
+            <label for="tel">Phone</label>
+            <input type="tel" id="tel">
+        </div>
+        <hr>
+
+        <h3>Button</h3>
+        <div class="bd-button box">
+            Button
+            <input type="button" value="button">
+        </div>
+        <br><br><br>
+        <hr>
+
+        <h3>Checkbox</h3>
+        <div class="bd-checkbox box">
+            <input type="checkbox" id="coding" name="interest" value="coding" checked>
+            <label for="check">Coding</label><br>
+
+            <input type="checkbox" id="music" name="interest" value="music" >
+            <label for="check">Music</label><br>
+        </div>
+        <hr>
+
+        <h3>Radio</h3>
+        <div class="bd-radio box">
+            <p>Radio - Bora tomar uma café?</p>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="coffee" value="yes">
+
+            <label for="nono">No, thanks</label>
+            <input type="radio" id="nono" name="coffee" value="no" checked>
+        </div>
+        <hr>
+
+        <h3>Hidden</h3>
+        <div class="bd-hidden box">
+            <p>Hidden</p>
+            <small>Pode ser usado para enviar dados como o id do usuário, ou também para ser mostrado com uma condição.</small>
+            <input type="hidden" name="id" value="8">
+        </div>
+        <hr>
+
+        <h3>Range - <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_rangeslider_pic" target="_blank"><small>Styling</small></a></h3>
+        <div class="box">
+            <input type="range" min="1" max="10" value="0" step="3">
+        </div>
+        <hr>
+
+        <h3>Date, Datetime, Month and Week</h3>
+        <div class="box">
+            <input type="date" value="2023-03-07">
+            <input type="datetime-local">
+            <input type="month">
+            <input type="time">
+            <input type="week">
+        </div>
+        <hr>
+
+        <h2>Formulário</h2>
+
+        <div class="box">
+            <form action="" id="main-form" class="main-form">
+                <fieldset>
+                    <legend>Contato</legend>
+
+                    <div class="nome-email">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome aqui">
+                        </div>
+                        
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Seu email">
+                        </div>
+                    </div>
+
+                    <div class="text-area">
+                        <label for="msg">Digite sua mensagem</label>
+                        <textarea name="message" id="msg" cols="25" rows="8">
+                        </textarea>
+                    </div>
+
+                    <button class="btn__main-form" type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+
+    </section>
+
+
+    <a href="#btn-totop"><button id="totop">Top</button></a>
+    
+</body>
+</html>

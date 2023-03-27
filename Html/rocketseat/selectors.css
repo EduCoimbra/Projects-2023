@@ -1,0 +1,131 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+h1:hover::after,
+h2:hover::after{
+    content: '#';
+    color: #99999960;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 5px;
+
+    text-decoration: underline solid #FBDB6560;
+    /* text-underline-offset: auto; */
+}
+
+pre{
+    padding: 5px 15px;
+}
+
+main{
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+main h3{
+    margin-top: 1em;
+    font-weight: 400;
+}
+
+.band{
+    background-color: #191919;
+    color: #FBDB65;
+    padding: .5em;
+    margin-top: 2em;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .2em;
+}
+
+.box{
+    background-color: #FBDB65;
+    padding: .3em;
+    color: #000;
+    cursor: pointer;
+    font-weight: 300;
+
+    display: flex;
+    align-items: center;
+}
+.box:hover,
+.box:focus{
+    background-color: #fdd64a;
+}
+
+.p-class{
+    border: 1px solid #555;
+    padding: 3px;
+    display: flex;
+    gap: 5px;
+}
+
+.p-class div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #555;
+
+    font-size: .8em;
+    font-weight: 200;
+}
+
+.p-class div:nth-child(odd){
+    background-color: #35b977;
+}
+
+
+.selection{
+    padding: 0;
+    border-left: 1px dashed #35b977;
+    padding-left: 5px;
+    font-weight: 200;
+    align-self: center;
+}
+.selection::selection{
+    color: #FBDB65;
+    background-color: #35b977;
+}
+
+
+main ul{
+    list-style-position: inside;
+}
+
+
+/* Exemplos */
+.border{
+    margin-right: 1em;
+    outline: 2px dashed #191919;
+}
+
+.nav-child-combinator > ul > li{
+    color: red;
+}
+
+.adjacent-sibling-combinator + .adjacent-sibling-combinator{
+    background-color: #FBDB65;
+    margin-left: 1em;
+    border: none;
+    padding: .5em 1em;
+    color: #000;
+}
+
+.general-sibling-combinator ~ .general-sibling-combinator{
+    background-color: #FBDB65;
+    margin-left: .5em;
+    padding: 2px 5px;
+    border: none;
+    color: #000;
+}

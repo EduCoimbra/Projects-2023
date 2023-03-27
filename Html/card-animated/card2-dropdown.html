@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="card2.css">
+
+    <!-- FONTs GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="card">
+        <div class="content">
+            <div class="imgbx">
+                <img src="../assets/images/image-01.jpg" alt="">
+            </div>
+            <h2>Someone famous<span><br>Website developer</span></h2>
+        </div>
+
+        <ul class="navigation">
+            <li><a href="#"><ion-icon name="person-outline"></ion-icon>Edit profile</a></li>
+            <li><a href="#"><ion-icon name="chatbox-outline"></ion-icon>Inbox</a></li>
+            <li><a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a></li>
+            <li><a href="#"><ion-icon name="help-circle-outline"></ion-icon>Support</a></li>
+            <li><a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a></li>
+        </ul>
+
+        <div class="toggle"><ion-icon name="chevron-down-outline"></ion-icon></div>
+
+    </div>
+
+
+    <script>
+        const card = document.querySelector('.card');
+        const cardtoggle = document.querySelector('.toggle');
+
+        cardtoggle.onclick = function(){
+            card.classList.toggle('active')
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

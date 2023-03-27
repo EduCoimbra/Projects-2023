@@ -1,0 +1,213 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+:root{
+    --backco: #23424A;
+    --backco2: #136C72;
+    --backco-btn: #38CFD9;
+}
+
+body{
+    font-family: 'Blinker', sans-serif;
+    font-size: 1.3rem;
+}
+
+img{
+    display: block;
+}
+
+
+
+/* HEADER */
+header{
+    background-color: #136c72;
+    padding: 1em 0;
+}
+
+.container{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo{
+    margin-right: 1em;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav__list{
+    list-style: none;
+    display: flex;
+    font-size: 1rem;
+}
+
+.nav__list--primary{
+    margin: 0 auto;
+}
+
+.nav__item + .nav__item{
+    margin-left: 1em;
+}
+
+
+
+/* .nav__item--push-right{
+    margin-right: auto;
+} */
+
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.nav__link:hover,
+.nav__link:focus{
+    opacity: .75;
+}
+
+.nav__link--button{
+    background-color: #fff;
+    color: #136c72;
+    padding: .25em 1em;
+    border-radius: 10em;
+}
+
+
+
+
+/* CONTENT */
+.hero{
+    background: linear-gradient(to right, var(--backco2 ), var(--backco));
+    color: #FFF;
+    padding: 40px 0;
+}
+.hero h1{
+    font-size: 3rem;
+    font-weight: 900; 
+    margin-top: 0;          
+}
+.hero p{
+    margin-bottom: 2em;
+    /* margin-top: 0; */
+}
+
+.hero__text{
+    width: 62%;
+    /* margin-left: auto; */
+}
+
+.hero__img{
+    align-self: flex-start;
+    width: 32%;
+    /* margin-right: auto; */
+
+    padding-top: 4px;
+    background: linear-gradient(to left, yellow, green);
+}
+
+
+.main{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-weight: 300;
+    padding: 60px 0;
+
+    margin-top: 3em;
+}
+
+.flex{
+    /* I'm a flex container */
+    display: flex;
+    gap: 1em;
+}
+
+
+/* MAIN AND ASIDE */
+.primary-content{
+    width: 62%;
+}
+
+.sidebar{
+    width: 32%;
+    padding: 1em;
+    background: #136c72;
+    text-align: center;
+    color: #fff;
+}
+
+.section-title{
+    color: #136C72;
+    margin-top: 0;
+}
+
+.sidebar-title{
+   margin-top: 1em; 
+}
+
+
+/* THREE COLUMNS */
+.col{
+    /* I'm a flex item */
+    width: 100%;
+    /* width: 100%; - This avoid columns to shrink when it has no content.*/
+}
+
+.col + .col{
+    background-color: limegreen;
+    border-left: #2b2b2b solid 5px;
+    padding-left: 10px;
+}
+
+
+/* BUTTONS */
+.btn{
+    display: inline-block;
+    background-color: var(--backco-btn);
+    padding: .5em 1em;
+    text-decoration: none;
+    color: #23424A;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 100px;
+    transition: opacity .5s;
+}
+.btn:hover,
+.btn:focus{
+    opacity: .75;
+}
+
+
+
+/* MEDIA QUERIES */
+/* Use 600px, 900px, 1200px, and 1800px if you plan on giving the giant-monitor people something special. */
+
+@media (max-width: 768px){
+    .flex{
+        display: block;
+    }
+
+    .hero__text,
+    .hero__img,
+    .primary-content,
+    .sidebar{
+        width: 100%;
+    }
+
+    .hero__img,
+    .sidebar{
+        margin-top: 2em;
+    }
+
+}

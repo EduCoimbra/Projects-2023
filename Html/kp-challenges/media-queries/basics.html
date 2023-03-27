@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        *, *::before, *::after{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            font-size: 1.3rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .example{
+            margin: 5em auto;
+            width: 90%;
+            background: orangered;
+            padding: 5em 0;
+        }
+
+        /* Starts Small Devices */
+        @media (min-width: 576px){
+            .example{
+                background: lightpink;
+            }
+        }
+
+        /* Starts Medium Devices */
+        @media (min-width: 768px){
+            .example{
+                background: lightgreen;
+            }
+        }
+
+        /* Starts Large Devices */
+        @media (min-width: 922px){
+            .example{
+                background: lightpink;
+            }
+        }
+
+        /* Starts Extra Large Devices */
+        @media (min-width: 1200px){
+            .example{
+                background: lightsalmon;
+            }
+        }
+
+        /* Starts Extra Extra Large Devices */
+        @media (min-width: 1400px){
+            .example{
+                background: lightblue;
+            }
+        }
+    </style>
+
+    <div class="example">
+    </div>
+    
+</body>
+</html>

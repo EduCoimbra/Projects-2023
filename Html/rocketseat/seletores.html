@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="selectors.css">
+
+  <title>Seletores</title>
+</head>
+<body>
+  
+  <main>    
+    <section class="band">
+      <div class="container">
+        <h1>Selectors</h1>
+      </div>
+    </section>
+
+    <p>They connect an <abbr title="Hyper Text Marckup Language">HTML</abbr> element with the <abbr title="Cascading Style Sheet">CSS</abbr> in order to change the element</p>
+       
+    <section class="band">
+      <div class="container">
+        <h2>Selector types</h2>
+      </div>
+    </section>
+
+    <section>
+
+      <h3>Element Selector: all HTML tags are selectors</h3>
+      <article class="d-flex">
+        
+        <div class="box">&lt;h1&gt;</div>
+        <div class="box">&lt;span&gt;</div>
+        <div class="box">&lt;p&gt;</div>
+        <div class="box">&lt;div&gt;</div>
+        <div class="box">&lt;html&gt;</div>
+        <div class="box">&lt;body&gt;</div>
+        <div class="box">&lt;br&gt;</div>
+        <div class="box">&lt;hr&gt;</div>
+      </article>
+
+      <h3>ID Selector</h3>
+      <article class="d-flex">
+        <div class="box">id="an-id"</div>
+      </article>
+
+      <h3>Class Selector</h3>
+      <article class="d-flex">
+        <div class="box">class="a-class"</div>
+      </article>
+
+
+      <h3>Attribute selector</h3>
+      <article class="d-flex"> 
+        <div class="box">[title]</div>
+        <div class="box">[size]</div>
+        <div class="box">[placeholder]</div>
+        <div class="box">[maxlength]</div>
+        <div class="box">[value]</div>
+        <div class="box">[href]</div>
+      </article>
+
+      <h3>Pseudo-class selector</h3>
+        <article class="d-flex">
+          <div class="box">:hover</div>
+          <div class="box">:link</div>
+          <div class="box">:visited</div>
+          <div class="box">:nth-of-type()</div>
+          <div class="box">:first-child</div>
+          <div class="box border">:nth-child()</div>
+          
+          <div class="p-class">
+            <div>:nth-child(odd)</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+
+        </article>
+
+      <h3>Pseudo-elements selector</h3>
+      <article class="d-flex">
+        <div class="box">::before</div>
+        <div class="box">::first-line</div>
+        <div class="box">::first-letter</div>
+        <div class="box">::marker</div>
+        <div class="box border">::selection</div>
+        <p class="selection">Select this phrase to see the result</p>
+      </article>
+
+      <h3>Multiple element selector</h3>
+      <article class="d-flex">
+        <div class="box">h1, #id, .class { }</div>
+      </article>
+
+    </section>
+
+    <section class="band"><h2>Combinators</h2></section>
+    <h3>It searchs all &lt;h2&gt; elements inside &lt;article&gt; and &lt;section&gt;</h3>
+      <article class="d-flex">
+        <div class="box">
+          <p>section article h2 { }</p>
+        </div>
+      </article>
+
+    
+    <section class="band"><h2>Child Combinator</h2></section>
+    <h3>It just selects elements that are <i>direct child</i></h3>
+
+      <article class="d-flex">
+        <div class="box border">
+<pre>nav > ul > li {
+  color: red; 
+}</pre>
+        </div>
+
+        <nav class="nav-child-combinator">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <ul><li>Item 3</li></ul>
+          </ul>
+        </nav>
+
+      </article>
+
+    <section class="band"><h2>Adjacent Sibling Combinator</h2></section>
+    <h3>It just selects adjacent siblings (<i>at the right</i>)  of the element </h3>
+      <article class="d-flex">
+        <div class="box border">
+          <p>.button + .button { }</p>
+        </div>
+
+          <button class="adjacent-sibling-combinator">First button</button>
+          <button class="adjacent-sibling-combinator">Second button</button>
+          <button class="adjacent-sibling-combinator">Third button</button>
+
+      </article>
+
+      <section class="band"><h2>General Sibling Combinator</h2></section>
+    <h3>It selects all adjacent siblings (<i>at the right</i>) of the element, even if there is another element between them</h3>
+      <article class="d-flex">
+        <div class="box border">
+          <p>.button ~ .button { }</p>
+        </div>
+
+          <button class="general-sibling-combinator">First button</button>
+          <button class="general-sibling-combinator">Second button</button>
+          <button class="general-sibling-combinator">Third button</button>
+          <button>Fouth button</button>
+          <button class="general-sibling-combinator">Fifth button</button>
+
+      </article>
+
+  </main>
+
+  
+</body>
+</html>

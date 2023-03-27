@@ -1,0 +1,90 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+}
+:root{
+    --backco: #23424A;
+    --backco2: #136C72;
+    --backco-btn: #38CFD9;
+}
+
+body{
+    font-family: 'Blinker', sans-serif;
+    font-size: 1.3rem;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.hero{
+    background: linear-gradient(to right, var(--backco2 ), var(--backco));
+    color: #FFF;
+    padding: 60px 0;
+}
+.hero h1{
+    font-size: 3rem;
+    font-weight: 900;        
+}
+.hero p{
+    margin-bottom: 2em;
+}
+
+.hero__text{
+    width: 60%;
+}
+
+/* CONTAINER */
+
+.container{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.three-col{
+    padding: 3em 0;
+}
+.three-col h2{
+    color: purple;
+}
+
+.two-col{
+    background: #136c72;
+    color: #fff;
+    padding: 5em 0;
+}
+
+.col{
+    max-width: 300px;
+}
+
+.col + .col{
+    border-left: 30px solid rgb(56, 56, 56);
+}
+
+
+/* BUTTONS */
+.btn{
+    display: inline-block;
+    background-color: var(--backco-btn);
+    padding: .75em 1.5em;
+    text-decoration: none;
+    color: #23424A;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 100px;
+    transition: opacity .5s;
+}
+.btn:hover,
+.btn:focus{
+    opacity: .75;
+}
