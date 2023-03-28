@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-d-flex">
+
+            <a href="#" class="logo">
+                <div class="header__imgbx">
+                    <img src="assets/images/profile.jpg" alt="Logo">
+                </div>
+            </a>
+            
+            <nav>
+                <ul class="menu">
+                    <li class="menu__items"><a href="">HTML</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Web Semântica</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__items"><a href="">CSS</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Responsividade</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="section-html" id="btn-totop">
+        <div class="container d-flex">
+            <h2>HTML</h2>
+            <article>
+                <h3>Web Semântica</h3>
+
+                <h4>&lt;header&gt;</h4>
+                <p>É utilizado para representar o cabeçalho de um documento ou seção declarado no HTML. Geralmente é no Header principal da página que colocamos um menu de navegação.</p>
+
+                <h4>&lt;nav&gt;</h4>
+                <p>É a tag que usamos para inserir um menu de navegação.</p>
+                
+                <h4>&lt;main&gt;</h4>
+                <p>Essa tag especifica o conteúdo principal e, consequentemente, de maior relevância dentro da página. Para ser considerada bem construída, uma página deve apresentar apenas um conteúdo principal.</p>
+
+                <h4>&lt;aside&gt;</h4>
+                <p>Relacionado levemente com o conteúdo main:</p>
+                <ul>
+                    <li>- Explicações</li>
+                    <li>- Glossários</li>
+                    <li>- Links extras</li>
+                    <li>- Biografia do autor</li>
+                    <li>- Informações do perfil</li>
+                </ul>
+
+                <h4>&lt;article&gt;</h4>
+                <p>Utilizamos o elemento quando precisamos declarar um conteúdo que não precisa de outro para fazer sentido em um documento HTML. É recomendado identificar cada um com um título. Veja algumas possíves aplicações:</p>
+                <ul>
+                    <li>- receitas</li>
+                    <li>- posts</li>
+                    <li>- conteúdos de fotografia</li>
+                    <li>- é uma composição independente</li>
+                </ul>
+
+                <h4>&lt;section&gt;</h4>
+                <p>Pode ser qualquer seção de uma página, como uma seção de Contato, Fale conosco ou uma faixa que está linkada a um menu.</p>
+
+                <h4>&lt;div&gt;</h4>
+                <p>Não é considerada uma tag semântica e pode ser usada de forma independente como para um carrinho de compras, por exemplo.</p>
+                
+                <h4>&lt;figure&gt;</h4>
+                <p>É uma marcação de uso específico para a inserção de uma figura/imagem. Para incluir a descrição dessa figura, podemos utilizar o elemento &lt;figcaption&gt;.</p>
+
+                
+                <h4>&lt;footer&gt;</h4>
+                <p>Esse elemento representa o rodapé de um documento. Normalmente é utilizado para descrever informações como:</p>
+                <ul>
+                    <li>- a data de criação do conteúdo</li>
+                    <li>- informações do autor</li>
+                    <li>- copyright</li>
+                    <li>- contato</li>
+                    <li>- sitemap</li>
+                    <li>- voltar ao topo</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Web Semântica no nível do texto</h3>
+                <h4>&lt;a&gt;</h4>
+                <p>A principal função do elemento é descrever um link, conectando os diversos documentos de um site e permitindo a navegação por esse conteúdo. Normalmente esses documentos estão relacionados por compartilharem um assunto em comum.</p>
+
+                <h4>&lt;em&gt;</h4>
+                <p>O elemento é utilizado quando desejamos enfatizar um trecho ou palavra no texto, indicando que ela contribui de forma mais relevante para o sentido/compreensão do conteúdo.</p>
+
+                <h4>&lt;strong&gt;</h4>
+                <p>O elemento também é utilizado para destacar uma parte do texto. Sua principal diferença em relação ao elemento &lt;em&gt; é que &lt;em&gt; pode alterar o propósito de uma frase, como vimos anteriormente.</p>
+
+                <h4>&lt;cite&gt; e &lt;q&gt;</h4>
+                <p>O elemento &lt;cite&gt; é utilizado para declarar que naquele trecho há uma citação, isto é, um trecho de texto que não foi escrito pelo autor do conteúdo. Normalmente o utilizamos em conjunto com o elemento &lt;q&gt;, responsável por apresentar o conteúdo retirado de outra fonte.</p>
+                <p>
+                    <q>Lorem ipsum dolor sit amet, consectetur </q> - <cite>http://br.lipsum.com/</cite>.
+                </p>
+
+                <h4>&lt;time&gt;</h4>
+                <p>O elemento é utilizado para representar datas. Assim, caso seja necessário informar a data em que um conteúdo foi escrito, podemos declarar a tag &lt;time&gt; e acrescentar a ela o atributo datetime para escrever a data de forma padronizada.</p>
+                <time datetime=”2017-04-07”>4/7</time>
+            </article><hr>
+
+            <article>
+                <h3>Formulários</h3>
+                <h4>Fieldset</h4>
+                <form action="">
+                    <fieldset>
+                        <legend>Nome e Sobrenome</legend>
+                        <label for="nome">Seu nome</label><br>
+                        <input type="text" name="nome" id="nome" placeholder="Eduardo"><br>
+            
+                        <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+                    </fieldset>          
+                </form>
+
+                <h4>Inputs</h4>
+                <div class="inputs">
+                    <div class="container">
+                        <div class="inputs-d-flex">
+                            <div class="box">text</div>
+                            <div class="box">email</div>
+                            <div class="box">number</div>
+                            <div class="box">tel</div>
+                            <div class="box">button</div>
+                            <div class="box">checkbox</div>
+                            <div class="box">color</div>
+                            <div class="box">date</div>
+                            <div class="box">datetime-local</div>
+                            <div class="box">file</div>
+                            <div class="box">hidden</div>
+                            <div class="box">image</div>
+                            <div class="box">month</div>
+                            <div class="box">password</div>
+                            <div class="box">radio</div>
+                            <div class="box">range</div>
+                            <div class="box">reset</div>
+                            <div class="box">search</div>
+                            <div class="box">submit</div>
+                            <div class="box">time</div>
+                            <div class="box">url</div>
+                            <div class="box">week</div>
+                            <div class="box">textarea</div>
+                        </div>
+                    </div>
+            
+                    <h4>Inputs - Examples</h4>
+                    <div class="inputs-exemples">
+                        <div class="container inputs-d-flex">
+            
+                            <a href="#bd-text">
+                                <div class="box">
+                                    <label for="text">Text</label>
+                                    <input style="max-width:100%!important;" type="text" id="text" pattern="[a-f]{5,8}" title="Mínimo de caracteres: 5">
+                                </div>
+                            </a>
+            
+                            <div class="box">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required multiple minlength="8" maxlength="255" pattern=".+@rocketseat\.com\.br" title="escolha@rocketseat.com.br">
+                            </div>
+            
+                            <div class="box">
+                                <label for="number">Number</label>
+                                <input type="number" id="number" readonly>
+                            </div>
+            
+                            <div class="box">
+                                <label for="tel">Phone</label>
+                                <input type="tel" id="tel">
+                            </div>
+            
+                            <div class="box">
+                                Button
+                                <input type="button" value="button">
+                            </div>
+                            
+                            <div class="box">
+                                Checkbox
+                                <label for="check"></label>
+                                <input type="checkbox" id="check" checked>
+                            </div>
+            
+                            <div class="box">
+                                <label for="color">Color</label>
+                                <input type="color" id="color" value="#00ff00" list="color-list">
+                                <datalist id="color-list">
+                                    <option>#d1d1d1</option>
+                                    <option>#303030</option>
+                                    <option>#0000ff</option>
+                                </datalist>
+                            </div> 
+            
+                            <div class="box">
+                                <label for="date">Date</label>
+                                <input type="date" id="date">
+                            </div>
+            
+                            <div class="box">
+                                <label for="dt-local">Datetime local</label>
+                                <input type="datetime-local">
+                            </div>
+            
+                            <div class="box">
+                                <label for="file">File</label>
+                                <input type="file" id="file" accept="image/*, video/*" class="file-input">
+            
+                                <!-- To upload multiple files
+            
+                                    <form action="" enctype="multipart/form-data">
+                                    <input type="file" multiple accept=".pdf">
+                                    </form> 
+                                -->
+                            </div>
+            
+                            <div class="box">
+                                Hidden
+                                <input type="hidden">
+                            </div>
+                            
+                            <div class="box">
+                                Image
+                                <input type="image" src="assets/images/favicon.png" width="17px" height="auto">
+                            </div>
+            
+                            <div class="box">
+                                <label for="month">Month</label>
+                                <input type="month" id="month">
+                            </div>
+            
+                            <div class="box">
+                                <label for="pass">Password</label>
+                                <input type="password" id="pass" minlength="5" maxlength="8" size="">
+                            </div>
+            
+                            <div class="box">
+                                Radio
+                                <input type="radio" id="radio">
+                                <label for="radio">radio</label>
+                            </div>
+            
+                            <div class="box">
+                                <label for="range">Range</label>
+                                <input type="range" id="range">
+                            </div>
+            
+                            <div class="box">
+                                Reset
+                                <input type="reset" value="reset">
+                            </div>
+            
+                            <div class="box">
+                                <!-- aria-label: substitue o label e serve para leitores de tela -->
+            
+                                <input type="seach" name="q" ut="" placeholder="Digite algo" aria-label="Campo de pesquisa: Digite seu termo de busca">
+                            </div>
+            
+                            <div class="box">
+                                Submit
+                                <input type="submit" value="submit">
+                            </div>
+            
+                            <div class="box">
+                                <label for="time">Time</label>
+                                <input type="time" id="time">
+                            </div>
+            
+                            <div class="box">
+                                <label for="url">URL</label>
+                                <input type="url" id="url" placeholder="https://site.com.br" required title="Só aceita domínios .com.br" pattern=".*\.com\.br/.*" list="urls-list">
+            
+                                <datalist id="urls-list">
+                                    <option>https://meusite.com.br/</option>
+                                </datalist>
+                            </div>
+            
+                            <div class="box">
+                                <label for="week">Week</label>
+                                <input type="week" id="week">
+                            </div>
+            
+                            <div class="box">
+                                <label for="msn">Textarea</label>
+                                <textarea id="msn" name="message" cols="20" rows="3" minlength="4" maxlength="300" wrap="" placeholder="Digite sua mensagem..." form="" required></textarea>
+                            </div>
+            
+                            <div class="box">
+                                <label for="car-select">Escolha</label><br>
+                                <select name="car-model" id="car-select" required form="" title="Segure CTRL e clique para escolher mais de uma marca" multiple size="3" >
+                                    <!-- multiple: para escolher mais de um -->
+            
+                                    <option value="">Fiat</option>
+                                    <option value="">Ford</option>
+                                    <option value="">Volkswagen</option>
+                                </select>
+                            </div>
+            
+                            <div class="box">
+                                <label for="animals">Please, choose your pets
+                                    <select name="pets" id="animals" multiple size="3">
+                                        <optgroup label="Four legged">
+                                            <option value="dog">Dog</option>
+                                            <option value="cat">Cat</option>
+                                            <option value="hamster">Hamster</option>
+                                        </optgroup>
+            
+                                        <optgroup label="Flying pets">
+                                            <option value="parrot">Parrot</option>
+                                            <option value="macaw">Macaw</option>
+                                            <option value="albatross">Albatross</option>
+                                        </optgroup>
+            
+                                    </select>
+                                </label>
+                            </div>                
+                        </div>
+                    </div>
+                    
+                    <h4>Input - attributes</h4>
+                    <div class="inputs-attributes">
+                        <div class="container">
+                            <ul class="inputs-d-flex">
+                                <li class="box">accept</li>
+                                <li class="box">alt</li>
+                                <li class="box">autocomplete</li>
+                                <li class="box">capture</li>
+                                <li class="box">checked</li>
+                                <li class="box">dirname</li>
+                                <li class="box">disabled</li>
+                                <li class="box">form</li>
+                                <li class="box">formaction</li>
+                                <li class="box">formenctype</li>
+                                <li class="box">formmethod</li>
+                                <li class="box">formnovalidade</li>
+                                <li class="box">formtarget</li>
+                                <li class="box">heigh</li>
+                                <li class="box">list</li>
+                                <li class="box">max</li>
+                                <li class="box">maxlength</li>
+                                <li class="box">min</li>
+                                <li class="box">minlength</li>
+                                <li class="box">multiple</li>
+                                <li class="box">name</li>
+                                <li class="box">pattern</li>
+                                <li class="box">placeholder</li>
+                                <li class="box">readonly</li>            
+                                <li class="box">required</li>
+                                <li class="box">size</li>
+                                <li class="box">src</li>
+                                <li class="box">step</li>
+                                <li class="box">type</li>
+                                <li class="box">value</li>
+                                <li class="box">width</li>
+                                <li class="box" id="btn">
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">global attribute</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <section class="section-css">
+        <div class="container d-flex">
+            <h2>CSS</h2>
+            <article>
+                <h3>Responsividade</h3>
+            </article>
+        </div>
+    </section>
+
+    <a href="#btn-totop"><button id="totop">Top</button></a>
+</body>
+</html>
