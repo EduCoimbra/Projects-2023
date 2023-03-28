@@ -18,8 +18,9 @@ img{
 
 .container{
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
+    /* border: 1px solid #3d863d; */
 }
 
 .d-flex{
@@ -41,25 +42,23 @@ h1{
 }
 
 h2{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: #222;
 }
 
 h3{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #444;
     margin-top: .5em;
 }
 
 h4{
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 1em;
     color: #3d863d;
 }
 
-p,
-li{
-    font-family: 'Open Sans', sans-serif;
+p{
     font-size: .925rem;
 }
 
@@ -109,8 +108,12 @@ li{
     color: #3d863d;
     padding: .5rem;
     box-shadow: 2px 2px 2px #00000050;
-    max-width: 100%;
     font-size: .9rem;
+}
+
+.section-html__forms{
+    border-top: 3px solid #999;
+    margin-top: 1em;
 }
 
 .section-html fieldset{
@@ -154,13 +157,11 @@ li{
 }
 
 
-
 /* CSS SECTION */
 .section-css{
-    background-color: #b4f3c3;
+    background-color: #add8e6;
     padding: 60px 0;
 }
-
 
 
 /* BUTTON TO TOP */
@@ -169,16 +170,69 @@ li{
     bottom: 20px;
     right: 20px;
     z-index: 10;
-    padding: .7em 1em;
+    width: 40px;
+    height: 40px;
+    /* padding: .7em 1em; */
     border: none;
     border-radius: 50px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3), 0 0 6px rgba(0, 0, 0, 0.7);
-    background: #fafd36;
-    color: #303030;
+    background: #000;
+    color: #fff;
     cursor: pointer;
     font-weight: bold;
     transition: translate .2s;
 }
+
 #totop:hover{
     translate: 0 -3px;    
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 576px){
+    .inputs-d-flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: .5em;
+    }
+
+    .inputs-d-flex > *{
+        flex: 1;
+    }    
+
+    .section-html__form{
+        width: 50%;
+    }
+}
+
+/* @media only screen and (min-width: 768px){
+
+    
+} */
+
+@media only screen and (min-width: 922px){
+    h1{
+        font-size: 2.5rem;
+    }
+    
+    h2{
+        font-size: 1.7rem;
+        color: #222;
+    }
+    
+    h3{
+        font-size: 1.4rem;
+        color: #444;
+        margin-top: .5em;
+    }
+    
+    h4{
+        font-size: 1.1rem;
+        margin-top: 1em;
+        color: #3d863d;
+    }
+    
+    p{
+        font-size: 1rem;
+    }    
 }

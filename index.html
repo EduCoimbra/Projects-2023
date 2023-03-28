@@ -119,12 +119,12 @@
                 <h4>&lt;time&gt;</h4>
                 <p>O elemento é utilizado para representar datas. Assim, caso seja necessário informar a data em que um conteúdo foi escrito, podemos declarar a tag &lt;time&gt; e acrescentar a ela o atributo datetime para escrever a data de forma padronizada.</p>
                 <time datetime=”2017-04-07”>4/7</time>
-            </article><hr>
+            </article>
 
-            <article>
+            <article class="section-html__forms">
                 <h3>Formulários</h3>
                 <h4>Fieldset</h4>
-                <form action="">
+                <form class="section-html__form" action="">
                     <fieldset>
                         <legend>Nome e Sobrenome</legend>
                         <label for="nome">Seu nome</label><br>
@@ -136,37 +136,35 @@
 
                 <h4>Inputs</h4>
                 <div class="inputs">
-                    <div class="container">
-                        <div class="inputs-d-flex">
-                            <div class="box">text</div>
-                            <div class="box">email</div>
-                            <div class="box">number</div>
-                            <div class="box">tel</div>
-                            <div class="box">button</div>
-                            <div class="box">checkbox</div>
-                            <div class="box">color</div>
-                            <div class="box">date</div>
-                            <div class="box">datetime-local</div>
-                            <div class="box">file</div>
-                            <div class="box">hidden</div>
-                            <div class="box">image</div>
-                            <div class="box">month</div>
-                            <div class="box">password</div>
-                            <div class="box">radio</div>
-                            <div class="box">range</div>
-                            <div class="box">reset</div>
-                            <div class="box">search</div>
-                            <div class="box">submit</div>
-                            <div class="box">time</div>
-                            <div class="box">url</div>
-                            <div class="box">week</div>
-                            <div class="box">textarea</div>
-                        </div>
+                    <div class="inputs-d-flex">
+                        <div class="box">text</div>
+                        <div class="box">email</div>
+                        <div class="box">number</div>
+                        <div class="box">tel</div>
+                        <div class="box">button</div>
+                        <div class="box">checkbox</div>
+                        <div class="box">color</div>
+                        <div class="box">date</div>
+                        <div class="box">datetime-local</div>
+                        <div class="box">file</div>
+                        <div class="box">hidden</div>
+                        <div class="box">image</div>
+                        <div class="box">month</div>
+                        <div class="box">password</div>
+                        <div class="box">radio</div>
+                        <div class="box">range</div>
+                        <div class="box">reset</div>
+                        <div class="box">search</div>
+                        <div class="box">submit</div>
+                        <div class="box">time</div>
+                        <div class="box">url</div>
+                        <div class="box">week</div>
+                        <div class="box">textarea</div>
                     </div>
             
                     <h4>Inputs - Examples</h4>
                     <div class="inputs-exemples">
-                        <div class="container inputs-d-flex">
+                        <div class="inputs-d-flex">
             
                             <a href="#bd-text">
                                 <div class="box">
@@ -338,44 +336,42 @@
                     
                     <h4>Input - attributes</h4>
                     <div class="inputs-attributes">
-                        <div class="container">
-                            <ul class="inputs-d-flex">
-                                <li class="box">accept</li>
-                                <li class="box">alt</li>
-                                <li class="box">autocomplete</li>
-                                <li class="box">capture</li>
-                                <li class="box">checked</li>
-                                <li class="box">dirname</li>
-                                <li class="box">disabled</li>
-                                <li class="box">form</li>
-                                <li class="box">formaction</li>
-                                <li class="box">formenctype</li>
-                                <li class="box">formmethod</li>
-                                <li class="box">formnovalidade</li>
-                                <li class="box">formtarget</li>
-                                <li class="box">heigh</li>
-                                <li class="box">list</li>
-                                <li class="box">max</li>
-                                <li class="box">maxlength</li>
-                                <li class="box">min</li>
-                                <li class="box">minlength</li>
-                                <li class="box">multiple</li>
-                                <li class="box">name</li>
-                                <li class="box">pattern</li>
-                                <li class="box">placeholder</li>
-                                <li class="box">readonly</li>            
-                                <li class="box">required</li>
-                                <li class="box">size</li>
-                                <li class="box">src</li>
-                                <li class="box">step</li>
-                                <li class="box">type</li>
-                                <li class="box">value</li>
-                                <li class="box">width</li>
-                                <li class="box" id="btn">
-                                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">global attribute</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul class="inputs-d-flex">
+                            <li class="box">accept</li>
+                            <li class="box">alt</li>
+                            <li class="box">autocomplete</li>
+                            <li class="box">capture</li>
+                            <li class="box">checked</li>
+                            <li class="box">dirname</li>
+                            <li class="box">disabled</li>
+                            <li class="box">form</li>
+                            <li class="box">formaction</li>
+                            <li class="box">formenctype</li>
+                            <li class="box">formmethod</li>
+                            <li class="box">formnovalidade</li>
+                            <li class="box">formtarget</li>
+                            <li class="box">heigh</li>
+                            <li class="box">list</li>
+                            <li class="box">max</li>
+                            <li class="box">maxlength</li>
+                            <li class="box">min</li>
+                            <li class="box">minlength</li>
+                            <li class="box">multiple</li>
+                            <li class="box">name</li>
+                            <li class="box">pattern</li>
+                            <li class="box">placeholder</li>
+                            <li class="box">readonly</li>            
+                            <li class="box">required</li>
+                            <li class="box">size</li>
+                            <li class="box">src</li>
+                            <li class="box">step</li>
+                            <li class="box">type</li>
+                            <li class="box">value</li>
+                            <li class="box">width</li>
+                            <li class="box" id="btn">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">global attribute</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </article>
@@ -390,7 +386,7 @@
             </article>
         </div>
     </section>
-
-    <a href="#btn-totop"><button id="totop">Top</button></a>
+    
+    <a href="#btn-totop"><img src="/assets/images/arrow_circle_up_white_24dp.svg" id="totop"></a>
 </body>
 </html>
